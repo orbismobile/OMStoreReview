@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OMStoreReview_Example' do
+  pod 'OMStoreReview', :path => '../'
+
+  target 'OMStoreReview_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
