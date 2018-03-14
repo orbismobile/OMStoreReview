@@ -1,9 +1,8 @@
 # OMStoreReview
 
-[![CI Status](http://img.shields.io/travis/Erik Flores/OMStoreReview.svg?style=flat)](https://travis-ci.org/Erik Flores/OMStoreReview)
-[![Version](https://img.shields.io/cocoapods/v/OMStoreReview.svg?style=flat)](http://cocoapods.org/pods/OMStoreReview)
-[![License](https://img.shields.io/cocoapods/l/OMStoreReview.svg?style=flat)](http://cocoapods.org/pods/OMStoreReview)
-[![Platform](https://img.shields.io/cocoapods/p/OMStoreReview.svg?style=flat)](http://cocoapods.org/pods/OMStoreReview)
+[![Github issues](https://img.shields.io/github/issues/orbismobile/OMStoreReview.svg)](https://github.com/orbismobile/OMStoreReview)
+[![License](https://img.shields.io/github/license/orbismobile/OMStoreReview.svg)](https://github.com/orbismobile/OMStoreReview)
+
 
 ## Example
 
@@ -22,7 +21,7 @@ pod 'OMStoreReview'
 
 ## Author
 
-Erik Flores, erikfloresq@gmail.com
+Orbis Mobile, ios.orbismobile@gmail.com
 
 ## License
 
