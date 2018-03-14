@@ -1,13 +1,13 @@
 import Foundation
 import StoreKit
 
-/** Class to control the number of touches before to show the ReviewModal */
+/** Class to control the number of touches before to show the review modal */
 
 public final class OMStoreReview {
     let keyStorage = "numberOfRuns"
 
     /**
-     Set the minimun number to count for to know when show the ReviewModal
+     The number of times to be counted before showing the review modal
      */
     public var minimumRunCount: Int = 3
 
@@ -17,7 +17,7 @@ public final class OMStoreReview {
     public init(){}
 
     /**
-     Use this method where do you register the touch for show the ReviewModal
+     Use this method where would you like register the touches before to show the review modal
      */
     public func request(){
         let currentNumber = getRunCounts()
@@ -32,7 +32,7 @@ public final class OMStoreReview {
     }
 
     /**
-     Reset the count
+     Reset the counter
      */
     public func resetRun(){
         let userDefaults = UserDefaults()

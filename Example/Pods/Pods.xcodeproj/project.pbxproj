@@ -121,9 +121,17 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		085E854E2059C3EC00C18335 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		1215F0AC453151B84D0F853DD5A9219C /* OMStoreReview */ = {
 			isa = PBXGroup;
 			children = (
+				085E854E2059C3EC00C18335 /* Assets */,
 				085E854D2059C2B600C18335 /* Classes */,
 				9C6A2C3A5CABEBFE29EE191A24C6FC8B /* Pod */,
 				48FF9CAEDAD40DBD7C98E6A356D15481 /* Support Files */,

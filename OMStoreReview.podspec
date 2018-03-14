@@ -14,7 +14,7 @@ Add a minimun touch for show the StoreReview modal and after the modal show, tha
 
   s.ios.deployment_target = '10.3'
 
-  s.source_files = 'OMStoreReview/Classes/**/*'
+  s.source_files = 'Classes/**/*'
   
   s.frameworks = 'StoreKit'
 end
