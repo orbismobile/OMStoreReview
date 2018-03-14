@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import OMStoreReview
 
 class ViewController: UIViewController {
 
+    let reviewStore = OMStoreReview()
+
     override func viewDidLoad() {
+        reviewStore.resetRun()
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+    }
+
+    @IBAction func pressMe(_ sender: Any) {
+        reviewStore.request()
     }
 
     override func didReceiveMemoryWarning() {

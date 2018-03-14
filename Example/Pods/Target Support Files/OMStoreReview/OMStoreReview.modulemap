@@ -1,0 +1,6 @@
+framework module OMStoreReview {
+  umbrella header "OMStoreReview-umbrella.h"
+
+  export *
+  module * { export * }
+}

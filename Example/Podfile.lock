@@ -1,0 +1,16 @@
+PODS:
+  - OMStoreReview (0.1.0)
+
+DEPENDENCIES:
+  - OMStoreReview (from `../`)
+
+EXTERNAL SOURCES:
+  OMStoreReview:
+    :path: ../
+
+SPEC CHECKSUMS:
+  OMStoreReview: 9f2774ea74bc8ece97dc56db91eba3827fce7b43
+
+PODFILE CHECKSUM: 265e03b1ba7407f233d6e799085dc05ef8b5d47f
+
+COCOAPODS: 1.4.0

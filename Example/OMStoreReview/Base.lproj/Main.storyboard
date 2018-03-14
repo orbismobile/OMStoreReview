@@ -20,7 +20,27 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIg-6l-96z">
+                                <rect key="frame" x="87" y="308" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.95593005419999999" green="0.57640749219999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EhE-CJ-Dtn"/>
+                                    <constraint firstAttribute="width" constant="200" id="hBG-QT-wSr"/>
+                                </constraints>
+                                <state key="normal" title="Press me !">
+                                    <color key="titleColor" red="0.99999064209999999" green="0.9999936223" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressMe:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fcs-71-iWN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FIg-6l-96z" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="RAv-TY-W58"/>
+                            <constraint firstItem="FIg-6l-96z" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="x4J-bk-MeH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

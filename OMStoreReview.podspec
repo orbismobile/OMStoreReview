@@ -1,42 +1,20 @@
-#
-# Be sure to run `pod lib lint OMStoreReview.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'OMStoreReview'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of OMStoreReview.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.swift_version    = '4.0'
+  s.summary          = 'OMStoreReview is for control when you show the SKStoreReview'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Add a minimun touch for show the StoreReview modal and after the modal show, that modal didn't show again.
                        DESC
 
-  s.homepage         = 'https://github.com/Erik Flores/OMStoreReview'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/orbismobile/OMStoreReview'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Erik Flores' => 'erikfloresq@gmail.com' }
-  s.source           = { :git => 'https://github.com/Erik Flores/OMStoreReview.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Orbis Mobile' => 'ios.orbismobile@gmail.com' }
+  s.source           = { :git => 'https://github.com/orbismobile/OMStoreReview.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.3'
 
   s.source_files = 'OMStoreReview/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'OMStoreReview' => ['OMStoreReview/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'StoreKit'
 end
