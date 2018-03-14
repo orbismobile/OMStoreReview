@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'OMStoreReview'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.swift_version    = '4.0'
   s.summary          = 'OMStoreReview is for control when you show the SKStoreReview'
   s.description      = <<-DESC
