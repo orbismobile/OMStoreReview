@@ -12,7 +12,7 @@ Add a minimun touch for show the StoreReview modal and after the modal show, tha
   s.author           = { 'Orbis Mobile' => 'ios.orbismobile@gmail.com' }
   s.source           = { :git => 'https://github.com/orbismobile/OMStoreReview.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.3'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'Classes/**/*'
   
