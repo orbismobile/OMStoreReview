@@ -4,6 +4,8 @@ import StoreKit
 /** Class to control the number of touches before to show the review modal */
 
 public final class OMStoreReview {
+    let userDefaults = UserDefaults()
+    let store = UserDefaults.standard
     let keyStorage = "numberOfRuns"
 
     /**
@@ -35,26 +37,23 @@ public final class OMStoreReview {
      Reset the counter
      */
     public func resetRun(){
-        let userDefaults = UserDefaults()
-        userDefaults.setValuesForKeys([keyStorage: 1])
-        userDefaults.synchronize()
+        store.setValuesForKeys([keyStorage: 1])
+        store.synchronize()
     }
 
     private func incrementRun (){
-        let userDefaults = UserDefaults()
         let currentRun = getRunCounts() + 1
-        userDefaults.setValuesForKeys([keyStorage: currentRun])
-        userDefaults.synchronize()
+        store.setValuesForKeys([keyStorage: currentRun])
+        store.synchronize()
     }
 
     private func getRunCounts () -> Int{
-        let userDefaults = UserDefaults()
-        let currentRuns = userDefaults.value(forKey: keyStorage)
-        var defaultRun = 1
-        if (currentRuns != nil){
-            defaultRun = currentRuns as! Int
+        if (store.object(forKey: keyStorage) != nil){
+            let currentRuns = store.value(forKey: keyStorage)
+            return currentRuns as! Int
+        } else {
+            return 1
         }
-        return defaultRun
     }
 }
 

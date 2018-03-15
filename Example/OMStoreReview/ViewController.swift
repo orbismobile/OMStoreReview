@@ -7,20 +7,13 @@
 //
 
 import UIKit
-import OMStoreReview
 
 class ViewController: UIViewController {
 
-    let reviewStore = OMStoreReview()
 
     override func viewDidLoad() {
-        reviewStore.resetRun()
         super.viewDidLoad()
 
-    }
-
-    @IBAction func pressMe(_ sender: Any) {
-        reviewStore.request()
     }
 
     override func didReceiveMemoryWarning() {

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,11 +29,11 @@
                                     <constraint firstAttribute="height" constant="50" id="EhE-CJ-Dtn"/>
                                     <constraint firstAttribute="width" constant="200" id="hBG-QT-wSr"/>
                                 </constraints>
-                                <state key="normal" title="Press me !">
+                                <state key="normal" title="Show the modal">
                                     <color key="titleColor" red="0.99999064209999999" green="0.9999936223" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="pressMe:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fcs-71-iWN"/>
+                                    <segue destination="hy7-hG-1ps" kind="presentation" id="ege-F8-6Q0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,6 +46,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="63" y="116"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="6Gc-ZU-Vfm">
+            <objects>
+                <viewController id="hy7-hG-1ps" customClass="DetailViewController" customModule="OMStoreReview_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hyR-ab-Fzx"/>
+                        <viewControllerLayoutGuide type="bottom" id="bb8-Gk-BzW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yLQ-pg-MF0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="link" translatesAutoresizingMaskIntoConstraints="NO" id="krI-a7-Zi6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="295"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="295" id="Y8o-mP-7da"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zQD-f2-OtT">
+                                <rect key="frame" x="16" y="303" width="343" height="344"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pS8-am-hg1">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.95593005419999999" green="0.57640749219999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="P5s-4V-gtJ"/>
+                                </constraints>
+                                <state key="normal" title="Buy !"/>
+                                <connections>
+                                    <action selector="buy:" destination="hy7-hG-1ps" eventType="touchUpInside" id="vOm-6d-ORd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="pS8-am-hg1" firstAttribute="trailing" secondItem="yLQ-pg-MF0" secondAttribute="trailingMargin" id="AR4-lz-680"/>
+                            <constraint firstItem="bb8-Gk-BzW" firstAttribute="top" secondItem="zQD-f2-OtT" secondAttribute="bottom" constant="20" id="D3b-iq-J7S"/>
+                            <constraint firstItem="pS8-am-hg1" firstAttribute="leading" secondItem="yLQ-pg-MF0" secondAttribute="leadingMargin" id="I1Y-mP-xgo"/>
+                            <constraint firstItem="zQD-f2-OtT" firstAttribute="trailing" secondItem="yLQ-pg-MF0" secondAttribute="trailingMargin" id="RD6-Jj-t53"/>
+                            <constraint firstItem="krI-a7-Zi6" firstAttribute="top" secondItem="yLQ-pg-MF0" secondAttribute="top" id="Wvt-z3-ORL"/>
+                            <constraint firstAttribute="trailing" secondItem="krI-a7-Zi6" secondAttribute="trailing" id="f6O-7d-oaz"/>
+                            <constraint firstItem="krI-a7-Zi6" firstAttribute="leading" secondItem="yLQ-pg-MF0" secondAttribute="leading" id="jCw-IP-tJh"/>
+                            <constraint firstItem="pS8-am-hg1" firstAttribute="centerX" secondItem="yLQ-pg-MF0" secondAttribute="centerX" id="kJy-Cr-CBg"/>
+                            <constraint firstItem="zQD-f2-OtT" firstAttribute="top" secondItem="krI-a7-Zi6" secondAttribute="bottom" constant="8" id="p0y-xq-Swz"/>
+                            <constraint firstItem="pS8-am-hg1" firstAttribute="bottom" secondItem="zQD-f2-OtT" secondAttribute="bottom" id="pBe-vk-OlO"/>
+                            <constraint firstItem="zQD-f2-OtT" firstAttribute="leading" secondItem="yLQ-pg-MF0" secondAttribute="leadingMargin" id="r9p-dY-fFz"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="0Gz-8I-Nhe" appends="YES" id="DDu-0Z-jGZ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="closeModal" destination="0Gz-8I-Nhe" id="XEA-jl-W8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODk-nJ-h1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="0Gz-8I-Nhe"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="link" width="3238" height="2256"/>
+    </resources>
 </document>
